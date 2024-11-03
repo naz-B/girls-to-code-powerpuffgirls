@@ -1,0 +1,42 @@
+<!DOCTYPEhtml>
+<html Lang="en">
+  <head>
+    <meta charset="UTF-8"
+      <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet"href="{{url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/projects">Projects</a></li>
+    <li><a href="/contacts">Contacts</a></li>
+  </ul>
+  <div id="image">
+    <img style= "width: 400px" src="{{url_for('static', filename='images/girl.jpg')}}">
+    <img style= "width: 400px" scr="{{url_for('static', filename='image/girl.png')}}">
+    <img style= "width: 400px" scr="{{url_for('static', filename='image/girl.png')}}">
+  </div>
+</nav>
+<main>
+<h1>{{welcome_msg}}</h1>
+    <img src="{{url_for('static', filename='images/girls.png') }}" alt="Contact image">
+<p><This is the home page of our portfolio.Here, you can find information about us, our projects,and how to contact us.Feel free to explore the different sections to learn more!/p>
+<section>
+  <h2>Latest project</h2>
+  <p>Stay tuned for updates on our latest projects and achivements.We are constantly working on new and exiting things!</p>
+</section>
+<section>
+  <h2>Featured project</h2>
+<p>Check out our latest project:| It's a web application designed to help users manage their tasks efficiently</p>
+</section>
+ <img src=''/> 
+</main>
+
+    
+
+  </body>
+</html>
